@@ -1,0 +1,80 @@
+header, nav, main, footer, figure, figcaption { display: block; }
+* {box-sizing: border-box; }
+body {
+    background-color: #AACCFF;
+    color: #111;
+    font-family: 'Calluna Sans', sans-serif, georgia, serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.625;
+    margin: 0;
+}
+#wrapper { background-color: steelblue; 
+           color: #FFFFFF;
+           width: 80%;
+		   margin: auto;
+           min-width:850px;
+} 
+header { background-color: AACCFF;
+        color: #FFFFFF; 
+        font-size: 100%; 
+        font-style: oblique;
+        font-family: cursive;
+        padding: 10px 10px 10px 155px;
+		background-image: url(blunt.jpg); 
+		background-repeat: initial;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.topnav {  float: right;
+           background-color: #00005D; 
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: right; 
+	   padding-right: 2em;
+	   position: relative;
+} 
+nav ul { list-style-type: none; 
+        margin: 0;
+}
+nav ul ul { position: absolute; 
+        background-color: #5564A0; 
+		padding: 0; 
+		text-align: left; 
+		display: none; }
+nav ul ul li { border: 1px solid #00005D; 
+          display: block; 
+		  width: 8em; 
+		  padding-left: 1em; 
+		  margin-left: 0; }
+nav li:hover ul { display: block;}
+nav li { padding: 0.5em;
+      display: inline-block;
+}
+nav a { text-decoration: none; 
+       display: block;
+}
+nav a:link { color: #FFFFFF; }
+nav a:visited { color: #EAEAEA; }
+nav a:hover {  color: #D3DBEB;}
+main { background-color: #4682b4;
+           color: #FFFFFF;
+		   padding: 10px 20px;
+	       overflow: auto; 
+		   min-height: 400px;
+} 
+h2 { color: #FFFFFF; 
+     font-family: arial, sans-serif;
+	 margin: 5px;
+}
+
+footer {font-size:70%;
+         text-align: center;
+         padding: 10px;
+		 clear: both;
+}
+header, main, nav, footer, figure, figcaption { display: block; }

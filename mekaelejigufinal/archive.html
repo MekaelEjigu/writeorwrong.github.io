@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Image Gallery</title>
+<meta charset="utf-8">
+<link href="project.css" rel="stylesheet">
+<style>
+body { background-color: #AACCFF;
+       color: #FFFFFF;
+}
+#gallery { position: relative; }
+figure { position: absolute;
+         left: 280px;
+		 text-align: center;
+		 opacity: .25; }
+#gallery ul { width: 300px; 
+              list-style-type: none;
+}
+#gallery li { display: inline; 
+              float: left;
+			  padding: 10px;
+}
+#gallery img { border-style: none; }
+#gallery a { color: #eaeaea;
+             text-decoration: none; 
+			 font-style: italic;
+}
+#gallery span { position: absolute; 
+                left: -1000px;
+				opacity: 0;
+                transition: opacity 3s ease-in-out; 
+}
+#gallery a:hover span { position: absolute;
+                        top: 16px; 
+						left: 320px;
+                        text-align: center; 
+						opacity: 1;
+}
+</style>
+</head>
+<div id="wrapper">
+<header role="banner">
+<center><h1>Write or Wrong</h1></center>
+  </header>
+<center><nav><div class="topnav" id="myTopnav">
+<strong><a href="index.html">Home</a> &nbsp; 
+<a href="archive.html">Archive</a> &nbsp; 
+<a href="relevance.html">Relevance</a> &nbsp; 
+<a href="ideas.html">Ideas</a> &nbsp; 
+<a href="suggestions.html">Suggestions</a> &nbsp; 
+<a href="facts.html">Facts & Resources</a> &nbsp;
+</strong>
+</div></center></nav>
+<h1>Image Gallery</h1>
+<body>
+<div id="gallery">
+ <figure>
+  <img src="tablet.png" width="400" height="300" alt="Tablet">
+ </figure>
+ <ul>
+   <li><a href="tablet.png"><img src="tn_tablet.png" width="100" height="75" alt="The beginning">
+   <span><img src="tablet.png" width="400" height="300"
+      alt="The beginning"><br>The beginning</span></a>
+   </li>
+     <li><a href="cuneiform.jpg"><img src="tn_cuneiform.jpg" width="100" height="75" alt="Cuneiform">
+    <span><img src="tn_cuneiform.jpg" width="400" height="300" alt="Cuneiform"><br>Cuneiform</span></a>
+  </li>
+  <li><a href="runestone.jpg"><img src="tn_runestone.jpg" width="100" height="75" alt="Runestone">
+    <span><img src="runestone.jpg" width="400" height="300" alt="Runestone"><br>Runestone</span></a>
+  </li>
+  <li><a href="classical.gif"><img src="tn_classical.gif" width="100" height="75" alt="Classical">
+    <span><img src="classical.gif" width="400" height="300" alt="Classical"><br>Classical</span></a>
+  </li>
+  <li><a href="visigothic.jpg"><img src="tn_visigothic.jpg" width="100" height="75" alt="Visigothic">
+    <span><img src="visigothic.jpg" width="400" height="300" alt="Visigothic"><br>Visigothic</span></a>
+  </li>
+  <li><a href="books.jpg"><img src="tn_books.jpg" width="100" height="75" alt="Modern Books">
+    <span><img src="books.jpg" width="400" height="300" alt="Modern books"><br>Modern books</br></span></a>
+  </li>
+</body>
+</html>
